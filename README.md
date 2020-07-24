@@ -7,7 +7,7 @@ You need to register a twitter app here: https://developer.twitter.com/en/apps
 
 From this you can generate the required keys
 
-I have not committed the dev.exs
+I have not committed the dev.exs, you need to build your own
 
 
 It looks like:
@@ -21,3 +21,9 @@ config :twittex,
   consumer_key: "[INSERT CONSUMER_KEY]", 
   consumer_secret: "[INSERT CONSUMER_SECRET]]"
 ```
+
+Current usage:
+
+iex -S mix
+
+IdiotSon.fetch 20

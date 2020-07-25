@@ -27,3 +27,7 @@ Current usage:
 iex -S mix
 
 IdiotSon.fetch 20
+
+Can also be run as:
+
+mix latest

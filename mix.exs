@@ -7,7 +7,8 @@ defmodule IdiotSon.MixProject do
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -22,6 +23,12 @@ defmodule IdiotSon.MixProject do
   defp deps do
     [
       {:twittex, "~> 0.3.6"}
+    ]
+  end
+
+  defp aliases do
+    [
+      latest: ["run -e IdiotSon.latest"]
     ]
   end
 end
